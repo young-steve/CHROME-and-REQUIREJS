@@ -30,6 +30,5 @@ require(['jquery-ui', 'less'], function($, less) {
 		var init = (function() {
 			console.log("Let's do this!")
 		})(); // auto-start
-
-	}); // app namespace
+	})(); // app namespace
 }); // require
