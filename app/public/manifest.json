@@ -1,0 +1,40 @@
+{
+    "manifest_version" : 2,
+    "name": "DEFAULT",
+    "description": "",
+    "version": "0.0.00",
+    "options_page" : "",
+    "omnibox" : {
+        "keyword" : ""
+    },
+    "permissions" : [
+        "contextMenus",
+        "tabs",
+        "http://*/*"
+    ],
+    "content_scripts" : [{
+            "matches" : ["<all_urls>"], // matches all URLs
+            "css": [],
+            "js": [],
+            "all_frames" : true
+        }
+    ],
+    "content_security_policy" : "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+
+    // icon info ---------------------------------------
+    "icons" : {},
+    // browser actions info -----------------------------
+    "page_action" : {
+        "default_icon" : {},
+        "default_title" : "DEFAULT"
+    },
+    "web_accessible_resources": [
+        "js/vendor/jquery/jquery-1.10.2.js",
+        "js/vendor/jquery/jquery-ui-1.10.3.custom.min.js",
+        "js/vendor/backbone/backbone-1.1.0.js",
+        "js/vendor/underscore/underscore-1.5.2.js",
+        "js/vendor/handlebars/handlebars-v1.1.2.js",
+        "js/vendor/less/less.js",
+        "js/vendor/require/tex.js"
+    ]
+}
